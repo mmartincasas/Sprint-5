@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import IStep from '../../models/IStep';
 
 @Component({
   selector: 'app-escena',
@@ -9,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class EscenaComponent {
 
+  @Input()  arraySteps: IStep[] = [];
+  
 }
