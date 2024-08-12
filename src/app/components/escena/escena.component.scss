@@ -1,7 +1,7 @@
 
 
-$active-color: #5DE2E7;
-$disabled-color: #838585;
+$active-color: #373a3a;
+$disabled-color: #c3c4c4;
 
 
 .card {
@@ -9,27 +9,41 @@ $disabled-color: #838585;
 }
 
 .card-img-top {
-    height: 50%;
-}
-
-.card-body {
-    flex: 1
+    height: 40vh; 
+    padding: 20px;
 }
 
 .right-button, .left-button{
+    width: 3em;
+    height: 3em;
     color: $disabled-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
         color: $active-color;
     }
+    &:focus, &:active {
+        border: none;
+    }
+}
+
+i {
+    font-size: 2.5em;
 }
 
 .point-button {
+    height: 0.8em;
+    width: 0.8em;
     background-color: $disabled-color;
     border: none;
     border-radius: 50%;
-    margin: 4px
+    margin: 4px;
 }
 
 .point-button.active {
+    width: 1.5em;
+    height: 0.75em;
+    border-radius: 28%;
     background-color: $active-color;
 }
